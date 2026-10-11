@@ -25,6 +25,7 @@
 ## 活跃坑
 - config.json 含密钥已被 gitignore，别提交
 - process() 签名无 locale 参数，场景走 scene（见 README）
+- diskcache 告警（GHSA-w8v5-vhqr-4h9v，medium，pickle 反序列化）提不了 PR：上游无修复版（PyPI 最新就是 5.6.3，advisory `first_patched_version: null`），本仓 `pyproject.toml` 直接声明且 `tier_guardian/cache.py` 在用。挂着等上游，**重复见到别再排查**
 
 ## 文档地图
 - 用户入门 → [README.md](README.md)
